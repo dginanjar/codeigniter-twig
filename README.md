@@ -132,7 +132,7 @@ Filters and Functions are similar but Filters are meant to transform data.
 $this->addFunction('site_url');
 ```
 
-Then in inside template:
+Then inside template:
 
 ```
 {{ 'news/local/123' }}
