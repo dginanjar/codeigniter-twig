@@ -1,0 +1,17 @@
+{
+    "name": "dginanjar/codeigniter-twig",
+    "type": "library",
+    "description": "Integrate Twig to CodeIgniter",
+    "keywords": ["codeigniter", "twig"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "twig/twig": "^3.4",
+        "twig/intl-extra": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dginanjar\\CodeIgniterTwig\\": "src/"
+        }
+    }
+}
