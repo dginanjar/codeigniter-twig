@@ -79,7 +79,7 @@ Here you can register global variables, filters and functions to extend Twig. Fo
 A global variable is like any other template variable, except that it's available in all templates and macros:
 
 ```php
-$this->twig->addGlobal('scatman', 'Ski Ba Bop Ba Dop Bop');
+$this->twig->addGlobals('scatman', 'Ski Ba Bop Ba Dop Bop');
 ```
 
 You can then use the `scatman` variable anywhere in a template:
