@@ -14,7 +14,7 @@ trait Twig
 
     public function display(string $template, array $data = []): ?string
     {
-        $this->data = array_unique(array_merge($this->data, $data));
+        $this->data = array_merge($this->data, $data);
 
         return $this->twig->display($template, $this->data);
     }

@@ -111,6 +111,6 @@ class Twig
     {
         $this->init();
 
-        return $this->twig->display("{$template}.{$this->config['fileExtension']}", array_unique($data));
+        return $this->twig->display("{$template}.{$this->config['fileExtension']}", $data);
     }
 }
