@@ -94,14 +94,13 @@ class Twig
 
         if ($this->config['debug']) {
             $this->twig->addExtension(new DebugExtension());
-            $this->addFunctions([
-                'd', 'dd',
-                'site_url', 'base_url',
-            ]);
+            $this->addFunctions(['d', 'dd']);
         }
 
         $this->twig->addExtension(new IntlExtension());
-
+        
+        $this->addFunctions(['site_url', 'base_url']);
+        
         $this->registerGlobals();
         $this->registerFilters();
         $this->registerFunctions();
